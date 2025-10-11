@@ -4,13 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
-      crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .brighten-img {
+            transition: filter 0.3s ease;
+            filter: brightness(1);
+        }
+        .brighten-img:hover {
+            filter: brightness(1.3);
+        }
+        .team-sheet-card {
+            background: linear-gradient(135deg, #001c58 80%, #ffffff 100%);
+            color: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+        .team-sheet-card h2 {
+            color: #f9dc5c;
+        }
+        .fixture-card {
+            background: #f8f9fa;
+            border-radius: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+        .player-img {
+            width: 48px;
+            height: 48px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid #f9dc5c;
+        }
+        .spurs-logo {
+            width: 60px;
+            margin-bottom: 1rem;
+        }
+    </style>
 </head>
-<body>
-    <h1>To Dare, Is To Do.</h1>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
-        crossorigin="anonymous"></script>
+<body class="bg-light">
+    <div class="container-fluid py-4">
+        <div class="row">
+            <!-- Main Content -->
+            <div class="col-lg-8 mb-4">
+                <div class="text-center mb-4">
+                    <img src="spurs-logo.png" alt="Spurs Logo" class="spurs-logo brighten-img">
+                    <h1 class="display-5 fw-bold text-primary">Tottenham Hotspur FC</h1>
+                    <p class="lead">To Dare, Is To Do.</p>
+                    <img src="Spurs+Stadium.jpg" class="img-fluid brighten-img rounded shadow mb-3" alt="Tottenham Hotspur Stadium">
+                </div>
+                <!-- Team Sheet -->
+                <div class="card team-sheet-card p-4 mb-4">
+                    <h2 class="mb-3 text-center">Team Sheet</h2>
+                    <div class="row g-3">
+                        <!-- Goalkeeper -->
+                        <div class="col-12 text-center mb-2">
+                            <img src="vicario.jpg" alt="Guglielmo Vicario" class="player-img me-2">
+                            <span class="fw-bold">Guglielmo Vicario</span> <span class="text-warning">(GK)</span>
+                        </div>
+                        <!-- Defenders -->
+                        <div class="col-12 text-center mb-2">
+                            <img src="porro.jpg" alt="Pedro Porro" class="player-img me-2">
+                            <span>Pedro Porro</span>
+                            <img src="romero.jpg" alt="Cristian Romero" class="player-img mx-2">
+                            <span>Cristian Romero</span>
+                            <img src="vdven.jpg" alt="Micky van de Ven" class="player-img mx-2">
+                            <span>Micky van de Ven</span>
+                            <img src="udogie.jpg" alt="Destiny Udogie" class="player-img ms-2">
+                            <span>Destiny Udogie</span>
+                        </div>
+                        <!-- Midfielders -->
+                        <div class="col-12 text-center mb-2">
+                            <img src="bissouma.jpg" alt="Yves Bissouma" class="player-img me-2">
+                            <span>Yves Bissouma</span>
+                            <img src="sarr.jpg" alt="Pape Matar Sarr" class="player-img mx-2">
+                            <span>Pape Matar Sarr</span>
+                            <img src="maddison.jpg" alt="James Maddison" class="player-img ms-2">
+                            <span>James Maddison</span>
+                        </div>
+                        <!-- Forwards -->
+                        <div class="col-12 text-center mb-2">
+                            <img src="kulusevski.jpg" alt="Dejan Kulusevski" class="player-img me-2">
+                            <span>Dejan Kulusevski</span>
+                            <img src="son.jpg" alt="Heung-Min Son" class="player-img mx-2">
+                            <span>Heung-Min Son (C)</span>
+                            <img src="richarlison.jpg" alt="Richarlison" class="player-img ms-2">
+                            <span>Richarlison</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fixtures Sidebar -->
+            <div class="col-lg-4">
+                <div class="card fixture-card p-3">
+                    <h3 class="text-center text-primary mb-3">Upcoming Fixtures</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex align-items-center">
+                            <img src="liverpool-logo.png" alt="Liverpool" class="me-2" style="width:32px;">
+                            <span>vs Liverpool</span>
+                            <span class="ms-auto text-muted">12 Oct, 17:30</span>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <img src="chelsea-logo.png" alt="Chelsea" class="me-2" style="width:32px;">
+                            <span>@ Chelsea</span>
+                            <span class="ms-auto text-muted">19 Oct, 20:00</span>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <img src="arsenal-logo.png" alt="Arsenal" class="me-2" style="width:32px;">
+                            <span>vs Arsenal</span>
+                            <span class="ms-auto text-muted">26 Oct, 16:00</span>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <img src="manutd-logo.png" alt="Man United" class="me-2" style="width:32px;">
+                            <span>@ Man United</span>
+                            <span class="ms-auto text-muted">2 Nov, 18:30</span>
+                        </li>
+                    </ul>
+                    <div class="text-center mt-3">
+                        <img src="premier-league-logo.png" alt="Premier League" style="width:48px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
