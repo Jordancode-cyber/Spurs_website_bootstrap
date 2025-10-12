@@ -6,27 +6,6 @@
     <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <style>
-        .team-sheet-card {
-            background: #fff; /* White background */
-            color: #001c58;
-            border-radius: 1rem;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-        }
-        .team-sheet-card h2 {
-            color: #001c58;
-        }
-        .fixture-card {
-            background: #f8f9fa;
-            border-radius: 1rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-        }
-        .player-img {
-            width: 48px;
-            height: 48px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 2px solid #f9dc5c;
-        }
         .spurs-logo {
             width: 60px;
             margin-bottom: 1rem;
@@ -51,27 +30,6 @@
         .dropdown-menu {
             background: #f8f9fa;
         }
-        /* Player Card Styles */
-        .player-card {
-            transition: transform 0.3s;
-        }
-        .player-card:hover {
-            transform: translateY(-5px);
-        }
-        /* Center player images perfectly in the card */
-        .player-card .card-img-top {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 1.5rem;
-            margin-bottom: 0.5rem;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 50%;
-            background: #fff;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        }
     </style>
 </head>
 <body class="bg-light">
@@ -87,8 +45,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="Index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="TeamSheet.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Team</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Fixtures</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
                 </ul>
@@ -144,269 +102,13 @@
 </div>
                 </div>
                 </div>
-                <!-- Team Sheet (Modern Card Grid, 15 players, color-coded positions) -->
-                <div class="card team-sheet-card p-4 mb-4">
-                    <h2 class="mb-4 text-center">First Team Squad</h2>
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
-                        <!-- 1. Goalkeeper -->
-                        <div class="col">
-                            <div class="card h-100 shadow-sm border-0 player-card text-center bg-transparent">
-                                <img src="Vicario.png" class="mx-auto mt-3 rounded-circle" alt="Guglielmo Vicario" style="width:120px; height:120px; object-fit:cover;">
-                                <div class="card-body p-2">
-                                    <h5 class="card-title mb-1">Guglielmo Vicario</h5>
-                                    <p class="card-text mb-1" style="color: #FFD600;">Goalkeeper</p>
-                                    <img src="Italy.jpg" alt="Italy" title="Italy" style="width:24px;">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 2. Defender -->
-                        <div class="col">
-                            <div class="card h-100 shadow-sm border-0 player-card text-center bg-transparent">
-                                <img src="Cristian Romero.png" class="mx-auto mt-3 rounded-circle" alt="Cristian Romero" style="width:120px; height:120px; object-fit:cover;">
-                                <div class="card-body p-2">
-                                    <h5 class="card-title mb-1">Cristian Romero</h5>
-                                    <p class="card-text mb-1" style="color: #1976d2;">Defender</p>
-                                    <img src="Argentina.jpg" alt="Argentina" title="Argentina" style="width:24px;">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 3. Defender -->
-                        <div class="col">
-                            <div class="card h-100 shadow-sm border-0 player-card text-center bg-transparent">
-                                <img src="Destiny Udogie.png" class="mx-auto mt-3 rounded-circle" alt="Destiny Udogie" style="width:120px; height:120px; object-fit:cover;">
-                                <div class="card-body p-2">
-                                    <h5 class="card-title mb-1">Destiny Udogie</h5>
-                                    <p class="card-text mb-1" style="color: #1976d2;">Defender</p>
-                                    <img src="Italy.jpg" alt="Italy" title="Italy" style="width:24px;">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 4. Defender -->
-                        <div class="col">
-                            <div class="card h-100 shadow-sm border-0 player-card text-center bg-transparent">
-                                <img src="Kevin Danso.png" class="mx-auto mt-3 rounded-circle" alt="Kevin Danso" style="width:120px; height:120px; object-fit:cover;">
-                                <div class="card-body p-2">
-                                    <h5 class="card-title mb-1">Kevin Danso</h5>
-                                    <p class="card-text mb-1" style="color: #1976d2;">Defender</p>
-                                    <img src="Austria.png" alt="Austria" title="Austria" style="width:24px;">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 5. Defender -->
-                        <div class="col">
-                            <div class="card h-100 shadow-sm border-0 player-card text-center bg-transparent">
-                                <img src="Radu Dragusin.png" class="mx-auto mt-3 rounded-circle" alt="Radu Dragusin" style="width:120px; height:120px; object-fit:cover;">
-                                <div class="card-body p-2">
-                                    <h5 class="card-title mb-1">Radu Dragusin</h5>
-                                    <p class="card-text mb-1" style="color: #1976d2;">Defender</p>
-                                    <img src="romania.jpg" alt="Romania" title="Romania" style="width:24px;">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 6. Midfielder -->
-                        <div class="col">
-                            <div class="card h-100 shadow-sm border-0 player-card text-center bg-transparent">
-                                <img src="bissouma.jpg" class="mx-auto mt-3 rounded-circle" alt="Yves Bissouma" style="width:120px; height:120px; object-fit:cover;">
-                                <div class="card-body p-2">
-                                    <h5 class="card-title mb-1">Yves Bissouma</h5>
-                                    <p class="card-text mb-1" style="color: #43a047;">Midfielder</p>
-                                    <img src="mali.jpg" alt="Mali" title="Mali" style="width:24px;">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 7. Midfielder -->
-                        <div class="col">
-                            <div class="card h-100 shadow-sm border-0 player-card text-center bg-transparent">
-                                <img src="sarr.jpg" class="mx-auto mt-3 rounded-circle" alt="Pape Matar Sarr" style="width:120px; height:120px; object-fit:cover;">
-                                <div class="card-body p-2">
-                                    <h5 class="card-title mb-1">Pape Matar Sarr</h5>
-                                    <p class="card-text mb-1" style="color: #43a047;">Midfielder</p>
-                                    <img src="senegal.jpg" alt="Senegal" title="Senegal" style="width:24px;">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 8. Midfielder -->
-                        <div class="col">
-                            <div class="card h-100 shadow-sm border-0 player-card text-center bg-transparent">
-                                <img src="maddison.jpg" class="mx-auto mt-3 rounded-circle" alt="James Maddison" style="width:120px; height:120px; object-fit:cover;">
-                                <div class="card-body p-2">
-                                    <h5 class="card-title mb-1">James Maddison</h5>
-                                    <p class="card-text mb-1" style="color: #43a047;">Midfielder</p>
-                                    <img src="england.jpg" alt="England" title="England" style="width:24px;">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 9. Midfielder -->
-                        <div class="col">
-                            <div class="card h-100 shadow-sm border-0 player-card text-center bg-transparent">
-                                <img src="lo-celso.jpg" class="mx-auto mt-3 rounded-circle" alt="Giovani Lo Celso" style="width:120px; height:120px; object-fit:cover;">
-                                <div class="card-body p-2">
-                                    <h5 class="card-title mb-1">Giovani Lo Celso</h5>
-                                    <p class="card-text mb-1" style="color: #43a047;">Midfielder</p>
-                                    <img src="argentina.jpg" alt="Argentina" title="Argentina" style="width:24px;">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 10. Midfielder -->
-                        <div class="col">
-                            <div class="card h-100 shadow-sm border-0 player-card text-center bg-transparent">
-                                <img src="bentancur.jpg" class="mx-auto mt-3 rounded-circle" alt="Rodrigo Bentancur" style="width:120px; height:120px; object-fit:cover;">
-                                <div class="card-body p-2">
-                                    <h5 class="card-title mb-1">Rodrigo Bentancur</h5>
-                                    <p class="card-text mb-1" style="color: #43a047;">Midfielder</p>
-                                    <img src="uruguay.jpg" alt="Uruguay" title="Uruguay" style="width:24px;">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 11. Forward -->
-                        <div class="col">
-                            <div class="card h-100 shadow-sm border-0 player-card text-center bg-transparent">
-                                <img src="kulusevski.jpg" class="mx-auto mt-3 rounded-circle" alt="Dejan Kulusevski" style="width:120px; height:120px; object-fit:cover;">
-                                <div class="card-body p-2">
-                                    <h5 class="card-title mb-1">Dejan Kulusevski</h5>
-                                    <p class="card-text mb-1" style="color: #e53935;">Forward</p>
-                                    <img src="sweden.jpg" alt="Sweden" title="Sweden" style="width:24px;">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 12. Forward -->
-                        <div class="col">
-                            <div class="card h-100 shadow-sm border-0 player-card text-center bg-transparent">
-                                <img src="son.jpg" class="mx-auto mt-3 rounded-circle" alt="Heung-Min Son" style="width:120px; height:120px; object-fit:cover;">
-                                <div class="card-body p-2">
-                                    <h5 class="card-title mb-1">Heung-Min Son</h5>
-                                    <p class="card-text mb-1" style="color: #e53935;">Forward</p>
-                                    <img src="south-korea-flag.png" alt="South Korea" title="South Korea" style="width:24px;">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 13. Forward -->
-                        <div class="col">
-                            <div class="card h-100 shadow-sm border-0 player-card text-center bg-transparent">
-                                <img src="richarlison.jpg" class="mx-auto mt-3 rounded-circle" alt="Richarlison" style="width:120px; height:120px; object-fit:cover;">
-                                <div class="card-body p-2">
-                                    <h5 class="card-title mb-1">Richarlison</h5>
-                                    <p class="card-text mb-1" style="color: #e53935;">Forward</p>
-                                    <img src="brazil.jpg" alt="Brazil" title="Brazil" style="width:24px;">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 14. Forward -->
-                        <div class="col">
-                            <div class="card h-100 shadow-sm border-0 player-card text-center bg-transparent">
-                                <img src="brennan-johnson.jpg" class="mx-auto mt-3 rounded-circle" alt="Brennan Johnson" style="width:120px; height:120px; object-fit:cover;">
-                                <div class="card-body p-2">
-                                    <h5 class="card-title mb-1">Brennan Johnson</h5>
-                                    <p class="card-text mb-1" style="color: #e53935;">Forward</p>
-                                    <img src="wales.jpg" alt="Wales" title="Wales" style="width:24px;">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 15. Forward -->
-                        <div class="col">
-                            <div class="card h-100 shadow-sm border-0 player-card text-center bg-transparent">
-                                <img src="manor-solomon.jpg" class="mx-auto mt-3 rounded-circle" alt="Manor Solomon" style="width:120px; height:120px; object-fit:cover;">
-                                <div class="card-body p-2">
-                                    <h5 class="card-title mb-1">Manor Solomon</h5>
-                                    <p class="card-text mb-1" style="color: #e53935;">Forward</p>
-                                    <img src="israel.jpg" alt="Israel" title="Israel" style="width:24px;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Substitutes Table -->
-<div class="card mb-4">
-    <div class="card-header bg-primary text-white">
-        <h5 class="mb-0">Substitutes</h5>
-    </div>
-    <div class="card-body p-0">
-        <table class="table table-striped mb-0">
-            <thead>
-                <tr>
-                    <th>Player</th>
-                    <th>Position</th>
-                    <th>Nationality</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Pierre-Emile Højbjerg</td>
-                    <td style="color:#43a047;">Midfielder</td>
-                    <td><img src="denmark.jpg" alt="Denmark" style="width:24px;"> Denmark</td>
-                </tr>
-                <tr>
-                    <td>Emerson Royal</td>
-                    <td style="color:#1976d2;">Defender</td>
-                    <td><img src="brazil.jpg" alt="Brazil" style="width:24px;"> Brazil</td>
-                </tr>
-                <tr>
-                    <td>Oliver Skipp</td>
-                    <td style="color:#43a047;">Midfielder</td>
-                    <td><img src="england.jpg" alt="England" style="width:24px;"> England</td>
-                </tr>
-                <tr>
-                    <td>Fraser Forster</td>
-                    <td style="color:#FFD600;">Goalkeeper</td>
-                    <td><img src="england.jpg" alt="England" style="width:24px;"> England</td>
-                </tr>
-                <tr>
-                    <td>Ryan Sessegnon</td>
-                    <td style="color:#1976d2;">Defender</td>
-                    <td><img src="england.jpg" alt="England" style="width:24px;"> England</td>
-                </tr>
-                <tr>
-                    <td>Alejo Véliz</td>
-                    <td style="color:#e53935;">Forward</td>
-                    <td><img src="argentina.jpg" alt="Argentina" style="width:24px;"> Argentina</td>
-                </tr>
-                <tr>
-                    <td>Giovani Lo Celso</td>
-                    <td style="color:#43a047;">Midfielder</td>
-                    <td><img src="argentina.jpg" alt="Argentina" style="width:24px;"> Argentina</td>
+                
                 </tr>
             </tbody>
         </table>
     </div>
 </div>
             </div>
-            
-            
-            
-            <!-- Fixtures Sidebar -->
-            <div class="col-md-4">
-                <div class="card fixture-card p-3">
-                    <h3 class="text-center text-primary mb-3">Upcoming Fixtures</h3>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item d-flex align-items-center">
-                            <img src="Liverpool_FC.svg" alt="Liverpool" class="me-2" style="width:32px;">
-                            <span>vs Liverpool</span>
-                            <span class="ms-auto text-muted">12 Oct, 17:30</span>
-                        </li>
-                        <li class="list-group-item d-flex align-items-center">
-                            <img src="Chelsea_FC.svg" alt="Chelsea" class="me-2" style="width:32px;">
-                            <span>@ Chelsea</span>
-                            <span class="ms-auto text-muted">19 Oct, 20:00</span>
-                        </li>
-                        <li class="list-group-item d-flex align-items-center">
-                            <img src="Arsenal_FC.svg" alt="Arsenal" class="me-2" style="width:32px;">
-                            <span>vs Arsenal</span>
-                            <span class="ms-auto text-muted">26 Oct, 16:00</span>
-                        </li>
-                        <li class="list-group-item d-flex align-items-center">
-                            <img src="Manchester_United_FC_crest.svg" alt="Man United" class="me-2" style="width:32px;">
-                            <span>@ Man United</span>
-                            <span class="ms-auto text-muted">2 Nov, 18:30</span>
-                        </li>
-                    </ul>
-                    <div class="text-center mt-3">
-                        <img src="Premier_League_Logo.svg" alt="Premier League" style="width:48px;">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
