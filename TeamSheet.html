@@ -50,7 +50,9 @@
         }
     </style>
 </head>
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="#">
                 <img src="Tottenham_Hotspur.svg.png" alt="Spurs Logo" width="40" class="me-2">
@@ -64,14 +66,38 @@
                     <li class="nav-item"><a class="nav-link active" href="Index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="TeamSheet.html">Team</a></li>
                     <li class="nav-item"><a class="nav-link" href="Fixtures.html">Fixtures</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <!-- Shop Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="shopDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="shopDropdown">
+                            <li>
+                                <a class="dropdown-item" href="Index.html">
+                                    Order a Jersey
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="Index.html">
+                                    Buy as a Gift
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="Index.html">
+                                    View All Merchandise
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container-fluid py-4">
-        <div class="row">
-<body>
+    <div class="container d-flex flex-column align-items-center justify-content-center min-vh-100 py-4">
+        <div class="row w-100 justify-content-center">
    <!-- Team Sheet (Modern Card Grid, 15 players, color-coded positions) -->
                 <div class="card team-sheet-card p-4 mb-4">
                     <h2 class="mb-4 text-center">First Team Squad</h2>
@@ -192,7 +218,7 @@
                                 <img src="Kulusevski.png" class="mx-auto mt-3 rounded-circle" alt="Dejan Kulusevski" style="width:120px; height:120px; object-fit:cover;">
                                 <div class="card-body p-2">
                                     <h5 class="card-title mb-1">Dejan Kulusevski</h5>
-                                    <p class="card-text mb-1" style="color: #e53935;">Forward</p>
+                                    <p class="card-text mb-1" style="color: #43a047;">Midfielder</p>
                                     <img src="sweden.png" alt="Sweden" title="Sweden" style="width:24px;">
                                 </div>
                             </div>
