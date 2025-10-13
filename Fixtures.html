@@ -45,10 +45,35 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="Index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="TeamSheet.html">Team</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="Fixtures.html">Fixtures</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Fixtures.html">Fixtures</a></li>
+                    <!-- Shop Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="shopDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="shopDropdown">
+                            <li>
+                                <a class="dropdown-item" href="Index.html#shop-section">
+                                    Order a Jersey
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="Index.html#shop-section">
+                                    Buy as a Gift
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="Index.html#shop-section">
+                                    View All Merchandise
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -138,5 +163,18 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center py-4 mt-5 w-100">
+        <div class="container">
+            <img src="Tottenham_Hotspur.svg.png" alt="Spurs Logo" width="40" class="mb-2">
+            <p class="mb-1">Tottenham Hotspur FC &copy; 2025. All rights reserved.</p>
+            <p class="mb-0 small">
+                <a href="Index.html" class="text-white text-decoration-underline me-2">Home</a>
+                <a href="TeamSheet.html" class="text-white text-decoration-underline me-2">Team</a>
+                <a href="Fixtures.html" class="text-white text-decoration-underline me-2">Fixtures</a>
+                <a href="Index.html#shop-section" class="text-white text-decoration-underline">Shop</a>
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
