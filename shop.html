@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .spurs-logo {
+            width: 60px;
+            margin-bottom: 1rem;
+        }
+        .history-section {
+            background: #001c58;
+            color: #fff;
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+        }
+        .dropdown-toggle {
+            background: #f9dc5c;
+            color: #001c58;
+            border: none;
+        }
+        .dropdown-toggle:hover, .dropdown-toggle:focus {
+            background: #ffe066;
+            color: #001c58;
+        }
+        .dropdown-menu {
+            background: #f8f9fa;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="Tottenham_Hotspur.svg.png" alt="Spurs Logo" width="40" class="me-2">
+                Spurs FC
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="Home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="TeamSheet.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Fixtures.html">Fixtures</a></li>
+                    <!-- Shop Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="shopDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="shopDropdown">
+                            <li>
+                                <a class="dropdown-item" href="Index.html#shop-section">
+                                    Order a Jersey
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="Index.html#shop-section">
+                                    Buy as a Gift
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="Index.html#shop-section">
+                                    View All Merchandise
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container d-flex flex-column align-items-center justify-content-center min-vh-100 py-4">
+        <div class="row w-100 justify-content-center">
+             <!-- Shop Section on Home Page -->
+                <div id="shop-section" class="container my-5">
+                    <h2 class="text-center mb-4">Spurs Shop</h2>
+                    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
+                        <!-- Home Jersey Product -->
+                        <div class="col d-flex justify-content-center">
+                            <div class="card h-100 text-center">
+                                <img src="Home_kit.jpg" class="card-img-top p-3" alt="Spurs Home Jersey" style="height:220px; object-fit:contain;">
+                                <div class="card-body">
+                                    <h5 class="card-title">2024/25 Home Jersey</h5>
+                                    <p class="card-text">Official Spurs home kit. Available in all sizes.</p>
+                                    <p class="fw-bold mb-1">From £65.00</p>
+                                    <button class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#orderModal">Order Now</button>
+                                    <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#giftModal">Buy as Gift</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Away Jersey Product -->
+                        <div class="col d-flex justify-content-center">
+                            <div class="card h-100 text-center">
+                                <img src="Away_kit.jpg" class="card-img-top p-3" alt="Spurs Away Jersey" style="height:220px; object-fit:contain;">
+                                <div class="card-body">
+                                    <h5 class="card-title">2024/25 Away Jersey</h5>
+                                    <p class="card-text">Official Spurs away kit. Stand out in style!</p>
+                                    <p class="fw-bold mb-1">From £65.00</p>
+                                    <button class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#orderModal">Order Now</button>
+                                    <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#giftModal">Buy as Gift</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Third Kit Product -->
+                        <div class="col d-flex justify-content-center">
+                            <div class="card h-100 text-center">
+                                <img src="Third_kit.jpg" class="card-img-top p-3" alt="Spurs Third Kit" style="height:220px; object-fit:contain;">
+                                <div class="card-body">
+                                    <h5 class="card-title">2024/25 Third Kit</h5>
+                                    <p class="card-text">Limited edition third kit for the 2024/25 season.</p>
+                                    <p class="fw-bold mb-1">From £70.00</p>
+                                    <button class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#orderModal">Order Now</button>
+                                    <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#giftModal">Buy as Gift</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Kids Kit Product -->
+                        <div class="col d-flex justify-content-center">
+                            <div class="card h-100 text-center">
+                                <img src="Kids_kit.png" class="card-img-top p-3" alt="Spurs Kids Kit" style="height:220px; object-fit:contain;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Kids Kit</h5>
+                                    <p class="card-text">Perfect for young Spurs fans. All sizes for kids.</p>
+                                    <p class="fw-bold mb-1">From £45.00</p>
+                                    <button class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#orderModal">Order Now</button>
+                                    <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#giftModal">Buy as Gift</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Teen Kit Product -->
+                        <div class="col d-flex justify-content-center">
+                            <div class="card h-100 text-center">
+                                <img src="Teen_kit.png" class="card-img-top p-3" alt="Spurs Teen Kit" style="height:220px; object-fit:contain;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Teen Kit</h5>
+                                    <p class="card-text">Specially designed for teens. Trendy and comfortable.</p>
+                                    <p class="fw-bold mb-1">From £55.00</p>
+                                    <button class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#orderModal">Order Now</button>
+                                    <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#giftModal">Buy as Gift</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Scarf Product -->
+                        <div class="col d-flex justify-content-center">
+                            <div class="card h-100 text-center">
+                                <img src="Scarf.jpg" class="card-img-top p-3" alt="Spurs Scarf" style="height:220px; object-fit:contain;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Spurs Scarf</h5>
+                                    <p class="card-text">Stay warm and show your support with this classic scarf.</p>
+                                    <p class="fw-bold mb-1">£20.00</p>
+                                    <button class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#orderModal">Order Now</button>
+                                    <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#giftModal">Buy as Gift</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Cap Product -->
+                        <div class="col d-flex justify-content-center">
+                            <div class="card h-100 text-center">
+                                <img src="Cap.jpg" class="card-img-top p-3" alt="Spurs Cap" style="height:220px; object-fit:contain;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Spurs Cap</h5>
+                                    <p class="card-text">Official club cap. Adjustable fit for all fans.</p>
+                                    <p class="fw-bold mb-1">£18.00</p>
+                                    <button class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#orderModal">Order Now</button>
+                                    <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#giftModal">Buy as Gift</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Order Modal -->
+                <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <form class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="orderModalLabel">Order Item</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="mb-3">
+                          <label for="orderName" class="form-label">Your Name</label>
+                          <input type="text" class="form-control" id="orderName" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="orderEmail" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="orderEmail" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="orderItem" class="form-label">Item</label>
+                          <select class="form-select" id="orderItem" required>
+                            <option selected>2024/25 Home Jersey</option>
+                            <option>2024/25 Away Jersey</option>
+                            <option>2024/25 Third Kit</option>
+                            <option>Kids Kit</option>
+                            <option>Teen Kit</option>
+                            <option>Spurs Scarf</option>
+                            <option>Spurs Cap</option>
+                          </select>
+                        </div>
+                        <div class="mb-3">
+                          <label for="orderSize" class="form-label">Size (with price)</label>
+                          <select class="form-select" id="orderSize">
+                            <option value="Small">Small (£65.00)</option>
+                            <option value="Medium">Medium (£65.00)</option>
+                            <option value="Large">Large (£65.00)</option>
+                            <option value="XL">XL (£65.00)</option>
+                            <option value="Kids">Kids (£45.00)</option>
+                            <option value="Teen">Teen (£55.00)</option>
+                            <option value="Not Applicable">Not Applicable</option>
+                          </select>
+                        </div>
+                        <div class="mb-3">
+                          <label for="orderAddress" class="form-label">Delivery Address</label>
+                          <textarea class="form-control" id="orderAddress" rows="2" required></textarea>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Place Order</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <!-- Gift Modal -->
+                <div class="modal fade" id="giftModal" tabindex="-1" aria-labelledby="giftModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <form class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="giftModalLabel">Buy as a Gift</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="mb-3">
+                          <label for="giftYourName" class="form-label">Your Name</label>
+                          <input type="text" class="form-control" id="giftYourName" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="giftRecipientName" class="form-label">Recipient's Name</label>
+                          <input type="text" class="form-control" id="giftRecipientName" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="giftRecipientEmail" class="form-label">Recipient's Email</label>
+                          <input type="email" class="form-control" id="giftRecipientEmail" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="giftItem" class="form-label">Item</label>
+                          <select class="form-select" id="giftItem" required>
+                            <option selected>2024/25 Home Jersey</option>
+                            <option>2024/25 Away Jersey</option>
+                            <option>2024/25 Third Kit</option>
+                            <option>Kids Kit</option>
+                            <option>Teen Kit</option>
+                            <option>Spurs Scarf</option>
+                            <option>Spurs Cap</option>
+                          </select>
+                        </div>
+                        <div class="mb-3">
+                          <label for="giftSize" class="form-label">Size (with price)</label>
+                          <select class="form-select" id="giftSize">
+                            <option value="Small">Small (£65.00)</option>
+                            <option value="Medium">Medium (£65.00)</option>
+                            <option value="Large">Large (£65.00)</option>
+                            <option value="XL">XL (£65.00)</option>
+                            <option value="Kids">Kids (£45.00)</option>
+                            <option value="Teen">Teen (£55.00)</option>
+                            <option value="Not Applicable">Not Applicable</option>
+                          </select>
+                        </div>
+                        <div class="mb-3">
+                          <label for="giftMessage" class="form-label">Gift Message</label>
+                          <textarea class="form-control" id="giftMessage" rows="2"></textarea>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Send Gift</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

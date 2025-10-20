@@ -4,8 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Tottenham Hotspur FC | Home</title>
     <title>Fixtures</title>
     <style>
+        :root {
+            --spurs-navy: #132257;
+            --spurs-blue: #1C3F94;
+            --spurs-yellow: #FFDC00;
+        }
+        .navbar {
+            background-color: var(--spurs-navy) !important;
+        }
+        .showcase {
+            background: linear-gradient(rgba(27, 48, 122, 0.767), rgba(19, 34, 87, 0.479)),
+                        url('https://www.tottenhamhotspur.com/media/images/site-images/new-stadium/nhs-test-events/stadium-view.jpg') center/cover;
+            padding-top: 72px; /* Account for navbar height */
+            min-height: 80vh;
+        }
+        .btn-spurs {
+            background-color: var(--spurs-yellow);
+            color: var(--spurs-navy);
+            font-weight: bold;
+            border: none;
+            padding: 12px 30px;
+            transition: all 0.3s;
+        }
+        .btn-spurs:hover {
+            background-color: var(--spurs-navy);
+            color: var(--spurs-yellow);
+        }
+        .spurs-logo {
+            width: 60px;
+            margin-bottom: 1rem;
+        }
+        #Spurs{
+            color:#FFDC00;
+            font-weight: bolder;
+        }
+        .history-section {
+            background: #001c58;
+            color: #fff;
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+        }
+        .dropdown-toggle {
+            background: #FFDC00;
+            color: #001c58;
+            border: none;
+        }
+        .dropdown-toggle:hover, .dropdown-toggle:focus {
+            background: #FFDC00;
+            opacity: 80%;
+            color: #001c58;
+        }
+        .dropdown-menu {
+            background: #f8f9fa;
+        }
+        @media (min-width: 768px) {
+    .news-input {
+    width: 50%;
+    }
+    }
         .fixture-card {
             background: #f8f9fa;
             border-radius: 1rem;
@@ -45,7 +108,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="Index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Home.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="TeamSheet.html">Team</a></li>
                     <li class="nav-item"><a class="nav-link" href="Fixtures.html">Fixtures</a></li>
                     <!-- Shop Dropdown -->
