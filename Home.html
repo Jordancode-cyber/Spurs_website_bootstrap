@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Tottenham Hotspur FC | Home</title>
+    <style>
+        :root {
+            --spurs-navy: #132257;
+            --spurs-blue: #1C3F94;
+            --spurs-yellow: #FFDC00;
+        }
+        .navbar {
+            background-color: var(--spurs-navy) !important;
+        }
+        .showcase {
+            background: linear-gradient(rgba(27, 48, 122, 0.767), rgba(19, 34, 87, 0.479)),
+                        url('https://www.tottenhamhotspur.com/media/images/site-images/new-stadium/nhs-test-events/stadium-view.jpg') center/cover;
+            padding-top: 72px; /* Account for navbar height */
+            min-height: 80vh;
+        }
+        .btn-spurs {
+            background-color: var(--spurs-yellow);
+            color: var(--spurs-navy);
+            font-weight: bold;
+            border: none;
+            padding: 12px 30px;
+            transition: all 0.3s;
+        }
+        .btn-spurs:hover {
+            background-color: var(--spurs-navy);
+            color: var(--spurs-yellow);
+        }
+        .spurs-logo {
+            width: 60px;
+            margin-bottom: 1rem;
+        }
+        #Spurs{
+            color:#FFDC00;
+            font-weight: bolder;
+        }
+        .history-section {
+            background: #001c58;
+            color: #fff;
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+        }
+        .dropdown-toggle {
+            background: #FFDC00;
+            color: #001c58;
+            border: none;
+        }
+        .dropdown-toggle:hover, .dropdown-toggle:focus {
+            background: #FFDC00;
+            opacity: 80%;
+            color: #001c58;
+        }
+        .dropdown-menu {
+            background: #f8f9fa;
+        }
+        @media (min-width: 768px) {
+    .news-input {
+    width: 50%;
+    }
+    }
+
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark mb-0">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="Tottenham_Hotspur.svg.png" alt="Spurs Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="Home_page.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Fixtures.html">Matches</a></li>
+                    <li class="nav-item"><a class="nav-link" href="TeamSheet.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tickets">Tickets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        
+
+    <!-- Showcase -->
+    <section class="showcase text-white py-5">
+        <div class="container">
+            <div class="row align-items-center min-vh-75">
+                <div class="col-lg-8">
+                    <h1 class="display-3 fw-bold mb-4">Welcome to<br><p id="Spurs">Tottenham Hotspur</p></h1>
+                    <p class="lead mb-4">Experience the thrill of Premier League football at our world-class stadium</p>
+                    <div class="d-flex gap-3">
+                        <a href="#tickets" class="btn btn-spurs">Buy Tickets</a>
+                        <a href="#matches" class="btn btn-outline-light">Next Match</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img class="img-fluid d-none d-lg-block"
+                        src="Tottenham_Hotspur.svg.png"
+                        alt="Tottenham Hotspur Logo"
+                    />
+        </div>
+      </div>
+    </section>
+
+                <!-- Centered History & Background Section -->
+                <div class="container d-flex flex-column align-items-center justify-content-center py-4">
+        <div class="row w-100 justify-content-center">
+            <div class="col-lg-8 mb-4">
+                <div class="text-center mb-4">
+                    <h1 class="display-5 fw-bold text-primary">Tottenham Hotspur FC</h1>
+                    <p class="lead"><strong>To Dare, Is To Do.</strong></p>
+                </div>
+                <div class="history-section mb-4">
+                    <h2 class="mb-3 text-center">History & Background</h2>
+                    <p>
+                        Founded in 1882, <strong>Tottenham Hotspur Football Club</strong> is one of England's most storied football clubs. Nicknamed "Spurs," the club is based in North London and plays its home matches at the state-of-the-art Tottenham Hotspur Stadium. Spurs are known for their attacking style of play and their famous motto, <em>"To Dare Is To Do."</em>
+                    </p>
+                    <p>
+                        The club has a rich history, including being the first British club to win a major European trophy (the Cup Winners' Cup in 1963) and achieving the league and FA Cup Double in 1961. Spurs have a passionate fanbase and a tradition of developing exciting talent.
+                    </p>
+                    <!-- Achievements Dropdown -->
+                    <div class="dropdown mt-3 text-center">
+                        <button class="btn dropdown-toggle" type="button" id="achievementsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            Achievements & Trophies
+                        </button>
+                        <ul class="dropdown-menu p-3" aria-labelledby="achievementsDropdown" style="min-width: 320px;">
+                            <li><h6 class="dropdown-header">Major Honours</h6></li>
+                            <li class="d-flex align-items-center mb-2">
+                                <img src="UEFA-Europa.jpg" alt="Premier League" style="width:40px; height:40px;" class="me-2">
+                                <span>League cups</span>
+                                <span class="badge bg-primary ms-auto">2</span>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <img src="FA Cup.jpg" alt="FA Cup" style="width:40px; height:40px;" class="me-2">
+                                <span>FA Cup</span>
+                                <span class="badge bg-primary ms-auto">8</span>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <img src="League cup.jpg" alt="League Cup" style="width:40px; height:40px;" class="me-2">
+                                <span>League Cup</span>
+                                <span class="badge bg-primary ms-auto">4</span>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li class="d-flex align-items-center mb-2">
+                                <img src="community-shield.jpg" alt="Community Shield" style="width:40px; height:40px;" class="me-2">
+                                <span>Charity/Community Shield</span>
+                                <span class="badge bg-primary ms-auto">7</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Next Match -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title mb-4">Next Match</h2>
+            <div class="card shadow-sm">
+                <div class="card-body p-4">
+                    <div class="row align-items-center text-center">
+                        <div class="col-md-4">
+                            <img src="Tottenham_Hotspur.svg.png" alt="Spurs" class="img-fluid mb-3" style="max-height: 80px;">
+                            <h4 class="mb-0">Tottenham Hotspur</h4>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="display-6 fw-bold mb-2">VS</div>
+                            <p class="text-muted mb-2">Saturday, Oct 21, 2025</p>
+                            <p class="text-muted mb-3">17:30 BST</p>
+                            <p class="mb-2"><i class="bi bi-geo-alt"></i> Tottenham Hotspur Stadium</p>
+                            <a href="#tickets" class="btn btn-spurs">Get Tickets</a>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="Liverpool_FC.svg" alt="Liverpool" class="img-fluid mb-3" style="max-height: 80px;">
+                            <h4 class="mb-0">Liverpool</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="display-1 text-primary mb-3">
+                                <i class="bi bi-ticket-perforated"></i>
+                            </div>
+                            <h3 class="card-title">Match Tickets</h3>
+                            <p class="card-text">Secure your seat at the Tottenham Hotspur Stadium</p>
+                            <a href="https://www.tottenhamhotspur.com/tickets/buy-tickets/home-tickets/" class="btn btn-spurs">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="display-1 text-primary mb-3">
+                                <i class="bi bi-shop"></i>
+                            </div>
+                            <h3 class="card-title">Club Shop</h3>
+                            <p class="card-text">Get the latest Spurs merchandise and 2025/26 kits</p>
+                            <a href="#" class="btn btn-spurs">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="display-1 text-primary mb-3">
+                                <i class="bi bi-person-vcard"></i>
+                            </div>
+                            <h3 class="card-title">Membership</h3>
+                            <p class="card-text">Join the Spurs family and enjoy exclusive benefits</p>
+                            <a href="https://www.tottenhamhotspur.com/tickets/premium-experiences/welcome/" class="btn btn-spurs">Join Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title mb-4">Latest News</h2>
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-sm mb-4">
+                        <img src="Son_makes_it_happen.jpg" alt="Son Heung-min Celebrating" class="img-fluid rounded-start">
+                        <div class="card-body p-4">
+                            <span class="badge bg-primary mb-2">Featured</span>
+                            <h3 class="card-title">Team News: Golden victory crowns memorial exit for Son</h3>
+                            <p class="card-text">A ten-year crowning victory as Son leaves Spurs a hero in the 
+                                eyes of Tottenham fans after a thrilling match filled with unforgettable moments...
+                            </p>
+                            <p class="card-text"><small class="text-muted">21 May 2025</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item">
+                            <span class="badge bg-success mb-2">Match Report</span>
+                            <h5 class="mb-1">Spurs Secure Victory in Thrilling Match</h5>
+                            <p class="mb-1">A comprehensive review of our latest Premier League performance...</p>
+                            <small class="text-muted">15 October 2025</small>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge bg-info mb-2">Academy</span>
+                            <h5 class="mb-1">Youth Team Progress Report</h5>
+                            <p class="mb-1">Latest updates from our academy and rising stars...</p>
+                            <small class="text-muted">14 October 2025</small>
+                        </li>
+                    </ul>
+                    <div class="text-end">
+                        <a href="https://www.tottenhamhotspur.com/news/" class="btn btn-spurs mt-3">Read More Articles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stadium Experience -->
+    <section class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="mb-4">Experience Our World-Class Stadium</h2>
+                    <p class="lead mb-4">Home to Tottenham Hotspur in North London, our stadium is a world-class sports and entertainment venue.</p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i> 62,850 capacity</li>
+                        <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i> World's first retractable pitch</li>
+                        <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i> Premium dining experiences</li>
+                        <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i> State-of-the-art facilities</li>
+                    </ul>
+                    <a href="#" class="btn btn-spurs">Book Stadium Tour</a>
+                </div>
+                <div class="col-md-6 d-flex justify-content-md-end align-items-center mb-4 mb-md-0">
+                    <img src="Stadium_litup.jpg" class="img-fluid rounded shadow" alt="Stadium at Night" style="max-width: 100%; height: auto; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Squad Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title mb-4">First Team Squad</h2>
+            <div class="row g-4">
+                <div class="col-6 col-md-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="Richarlison.jpeg" class="card-img-top" alt="Son Heung-min">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-0">Richarlison</h5>
+                            <p class="text-muted">Forward | #9</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="Maddison.jpeg" class="card-img-top" alt="James Maddison">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-0">James Maddison</h5>
+                            <p class="text-muted">Midfielder | #10</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="Romero.jpeg" class="card-img-top" alt="Cristian Romero">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-0">Cristian Romero</h5>
+                            <p class="text-muted">Defender | #17</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="Guglielmo Vicario.jpeg" class="card-img-top" alt="Guglielmo Vicario">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-0">Guglielmo Vicario</h5>
+                            <p class="text-muted">Goalkeeper | #13</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="TeamSheet.html" class="btn btn-spurs">View Full Squad</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title mb-4">Frequently Asked Questions</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item border-0 mb-3">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            How can I buy match tickets?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Match tickets can be purchased online through our official website. One Hotspur Members get priority access to tickets. Join as a member to increase your chances of securing tickets to matches.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border-0 mb-3">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            What are the stadium bag policies?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Bags larger than A4 size (21cm x 30cm) are not permitted into the stadium. All bags will be searched upon entry. We recommend arriving early if you need to bring a bag.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border-0">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                            How do I become a One Hotspur Member?
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            One Hotspur Membership can be purchased through our website. Members enjoy benefits including priority ticket access, exclusive content, and special offers at the club shop.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-4">Contact Information</h2>
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <i class="bi bi-geo-alt text-primary me-2"></i>
+                                    <span class="fw-bold">Stadium Address:</span><br>
+                                    Tottenham Hotspur Stadium<br>
+                                    782 High Road, Tottenham<br>
+                                    London, N17 0BX
+                                </li>
+                                <li class="mb-3">
+                                    <i class="bi bi-telephone text-primary me-2"></i>
+                                    <span class="fw-bold">Contact Numbers:</span><br>
+                                    Ticket Office: +44 (0)344 844 0102<br>
+                                    Club Shop: +44 (0)344 844 0105
+                                </li>
+                                <li class="mb-3">
+                                    <i class="bi bi-envelope text-primary me-2"></i>
+                                    <span class="fw-bold">Email:</span><br>
+                                    support@tottenhamhotspur.com
+                                </li>
+                                <li>
+                                    <i class="bi bi-clock text-primary me-2"></i>
+                                    <span class="fw-bold">Opening Hours:</span><br>
+                                    Monday to Friday: 9:30 AM - 5:00 PM<br>
+                                    Match Days: Opens 4 hours before kick-off
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-4">Get in Touch</h2>
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <select class="form-select" id="subject" required>
+                                        <option value="">Select a topic</option>
+                                        <option value="tickets">Ticket Enquiry</option>
+                                        <option value="membership">Membership</option>
+                                        <option value="merchandise">Merchandise</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-spurs">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors & Partners Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Sponsors & Partners</h2>
+            <div class="row justify-content-center align-items-center g-4">
+                <div class="col-6 col-md-2 text-center">
+                    <img src="AIA.png" alt="AIA" class="img-fluid" style="max-height: 60px;">
+                    <p class="mt-2 mb-0 small"><b>AIA</b></p>
+                </div>
+                <div class="col-6 col-md-2 text-center">
+                    <img src="Nike.png" alt="Nike" class="img-fluid" style="max-height: 60px;">
+                    <p class="mt-2 mb-0 small"><b>Nike</b></p>
+                </div>
+                <div class="col-6 col-md-2 text-center">
+                    <img src="HSBC.png" alt="HSBC" class="img-fluid" style="max-height: 60px;">
+                    <p class="mt-2 mb-0 small"><b>HSBC</b></p>
+                </div>
+                <div class="col-6 col-md-2 text-center">
+                    <img src="EA.png" alt="EA Sports" class="img-fluid" style="max-height: 60px;">
+                    <p class="mt-2 mb-0 small"><b>EA Sports</b></p>
+                </div>
+                <div class="col-6 col-md-2 text-center">
+                    <img src="AUDI.png" alt="Audi" class="img-fluid" style="max-height: 60px;">
+                    <p class="mt-2 mb-0 small"><b>Audi</b></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <img src="Tottenham_Hotspur.svg.png" alt="Spurs Logo" height="60" class="mb-3">
+                    <p class="mb-3">To Dare Is To Do</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Matches</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Team</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">News</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="mb-3">Fans</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Membership</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Tickets</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Shop</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Stadium Tours</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-3">Newsletter</h5>
+                    <p>Stay updated with the latest news and special offers</p>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                        <button class="btn btn-spurs" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="small mb-md-0">&copy; 2025 Tottenham Hotspur FC. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white text-decoration-none small me-3">Privacy Policy</a>
+                    <a href="#" class="text-white text-decoration-none small me-3">Terms & Conditions</a>
+                    <a href="#" class="text-white text-decoration-none small">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
