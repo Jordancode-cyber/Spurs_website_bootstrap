@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tottenham Hotspur</tITAL
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-info"> 
+
+  <!-- Navbar (black) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" class="bi bi-shield-fill" viewBox="0 0 16 16">
+          <path d="M8 .5l6 2.5v3.6c0 4.5-3.1 8.7-6 9.9-2.9-1.2-6-5.4-6-9.9V3L8 .5z"/>
+        </svg>
+        <span class="ms-2">Tottenham Hotspur</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="spurs-team.html"></a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero: card with white background for readability -->
+  <header class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h1 class="display-5 fw-bold mb-2">Tottenham Hotspur FC</h1>
+              <p class="lead text-muted">Project homepage built with Bootstrap utilities only — light blue background and black navbar/footer.</p>
+
+              <!-- Buttons (plain links) -->
+              <div class="mt-4 d-flex gap-2 flex-wrap">
+                <a href="spurs-team.html" class="btn btn-primary btn-lg" role="button">View Full Squad</a>
+                <a href="#news" class="btn btn-outline-secondary btn-lg" role="button">Latest News</a>
+                <a href="mailto:team@spurs-project.local" class="btn btn-dark btn-lg" role="button">Contact Team</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5 mt-4 mt-lg-0">
+          <div class="card shadow-sm">
+            <img src="https://resources.premierleague.com/premierleague/photos/players/250x250/p85971.png" class="card-img-top" alt="Son Heung-min">
+            <div class="card-body">
+              <h5 class="card-title mb-0">Son Heung-min</h5>
+              <p class="text-muted small mb-0">Captain • Forward</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About section (transparent over light blue, content in white card) -->
+  <section id="about" class="py-4">
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="h4">About This Project</h2>
+          <p class="text-muted">A simple Bootstrap + HTML project showing the squad gallery. The page background uses Bootstrap's <code>bg-info</code> (light blue). Navbar and footer use <code>bg-dark</code> (black).</p>
+          <ul class="list-unstyled mb-0">
+            <li>• Responsive layout using Bootstrap grid</li>
+            <li>• Gallery in a separate page (link: View Full Squad)</li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News / Cards (white cards sit on light-blue background) -->
+  <section id="news" class="py-4">
+    <div class="container">
+      <h3 class="h5 mb-3 text-dark">Latest News</h3>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Match Report — Spurs 2-1</h5>
+              <p class="card-text text-muted">Short summary of a recent match. Replace with your real content.</p>
+              <a href="#news" class="btn btn-sm btn-primary">Read full report</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Transfer Update</h5>
+              <p class="card-text text-muted">Squad news and transfer notes for your project.</p>
+              <a href="transfers.html" class="btn btn-sm btn-outline-secondary">More transfers</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Injury News</h5>
+              <p class="card-text text-muted">Player fitness updates — edit the HTML to keep current.</p>
+              <a href="#contact" class="btn btn-sm btn-dark">Contact medical team</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Links -->
+  <section class="py-4">
+    <div class="container">
+      <h3 class="h5 mb-3 text-dark">Quick Links</h3>
+      <div class="d-flex flex-wrap gap-2">
+        <a href="spurs-team.html" class="btn btn-outline-primary">View Full Squad</a>
+        <a href="spurs-team.html#about" class="btn btn-outline-secondary">Squad Details</a>
+        <a href="https://www.tottenhamhotspur.com" class="btn btn-outline-dark" target="_blank" rel="noopener">Official Site</a>
+        <a href="mailto:team@spurs-project.local" class="btn btn-outline-success">Email Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="h5 mb-3">Contact</h3>
+          <div class="row">
+            <div class="col-md-6">
+              <p class="text-muted mb-2">more about the team</p>
+              <a href="data:text/vcard;charset=utf-8,BEGIN%3AVCARD%0AVERSION%3A3.0%0AN%3ASpurs%20Project%0AORG%3ATottenham%20Hotspur%20Project%0ATITLE%3AProject%20Lead%0AEMAIL%3Btype%3DINTERNET%3Ateam%40spurs-project.local%0AEND%3AVCARD"
+                 download="spurs-project.vcf" class="btn btn-primary">Download Contact</a>
+            </div>
+
+            <div class="col-md-6">
+              <ul class="list-unstyled mb-0">
+                <li><strong>Location:</strong> London / Project (sample)</li>
+                <li><strong>Email:</strong> <a href="mailto:team@spurs-project.local">team@spurs-project.local</a></li>
+                <li><strong>Phone:</strong> <a href="tel:+441234567890">+44 1234 567890</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (black) -->
+  <footer class="py-4 bg-dark text-white">
+    <div class="container text-center small">
+       Tottenham Hotspur — Project home page  <a href="spurs-team.html" class="text-white text-decoration-underline">View Squad</a>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tottenham Hotspur  team for women</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark mb-4">
+    <div class="container">
+      <a class="navbar-brand" href="#"> Tottenham Hotspur Squad </a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h2 class="text-center mb-4">Tottenham Hotspur First Team</h2>
+
+    <!-- Player cards grid -->
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+      <!-- Vicario -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="c:\Users\-Phoebe-\Pictures\lk750.png" class="card-img-top" alt="Guglielmo Vicario">
+          <div class="card-body">
+            <h5 class="card-title">lize kop</h5>
+            <p class="card-text text-muted">wormer</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cristian Romero -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="c:\Users\-Phoebe-\Pictures\cathinkatandbergheadshot.png" class="card-img-top" alt="Cristian Romero">
+          <div class="card-body">
+            <h5 class="card-title">CATHINKA</h5>
+            <p class="card-text text-muted">NORWAY</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Micky van de Ven -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="c:\Users\-Phoebe-\Pictures\image10.png" class="card-img-top" alt="Micky van de Ven">
+          <div class="card-body">
+            <h5 class="card-title">CATHINKA</h5>
+            <p class="card-text text-muted"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Destiny Udogie -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="c:\Users\-Phoebe-\Pictures\image9.png" class="card-img-top" alt="Destiny Udogie">
+          <div class="card-body">
+            <h5 class="card-title">LENNA</h5>
+            <p class="card-text text-muted">ELAND</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pedro Porro -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="c:\Users\-Phoebe-\Pictures\image8.png" class="card-img-top" alt="Pedro Porro">
+          <div class="card-body">
+            <h5 class="card-title">CLARE</h5>
+            <p class="card-text text-muted"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Yves Bissouma -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="c:\Users\-Phoebe-\Pictures\image7.png" class="card-img-top" alt="Yves Bissouma">
+          <div class="card-body">
+            <h5 class="card-title">MATILDA</h5>
+            <p class="card-text text-muted"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- James Maddison -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="c:\Users\-Phoebe-\Pictures\image6.png" class="card-img-top" alt="James Maddison">
+          <div class="card-body">
+            <h5 class="card-title">JOSFINE</h5>
+            <p class="card-text text-muted"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Brennan Johnson -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="c:\Users\-Phoebe-\Pictures\womens first team.png" class="card-img-top" alt="Brennan Johnson">
+          <div class="card-body">
+            <h5 class="card-title">womens first team</h5>
+            <p class="card-text text-muted"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Son Heung-min -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="c:\Users\-Phoebe-\Pictures\image4.png" class="card-img-top" alt="Son Heung-min">
+          <div class="card-body">
+            <h5 class="card-title">Son Heung-min (Captain)</h5>
+            <p class="card-text text-muted">Forward  • South Korea</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Richarlison -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="c:\Users\-Phoebe-\Pictures\image3.png" class="card-img-top" alt="Richarlison">
+          <div class="card-body">
+            <h5 class="card-title">BETHANY</h5>
+            <p class="card-text text-muted"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dejan Kulusevski -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="c:\Users\-Phoebe-\Pictures\image2.png" class="card-img-top" alt="Dejan Kulusevski">
+          <div class="card-body">
+            <h5 class="card-title">MOLLY NILDEN</h5>
+            <p class="card-text text-muted"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rodrigo Bentancur -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="c:\Users\-Phoebe-\Pictures\image1.png" class="card-img-top" alt="Rodrigo Bentancur">
+          <div class="card-body">
+            <h5 class="card-title">Amy james</h5>
+            <p class="card-text text-muted"></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <small></small>
+  </footer>
+
+</body>
+</html>
